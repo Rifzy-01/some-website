@@ -1,27 +1,24 @@
-/* Basic Reset */
+/* General Reset */
 body, h1, h2, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* General Body Styling */
+/* General Styling */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
     background-color: #f9f9f9;
     padding: 0 20px;
 }
 
-/* Header Styling */
 header {
     background: #007BFF;
-    color: #fff;
+    color: white;
     padding: 10px 0;
     text-align: center;
 }
 
-/* Navigation Menu */
 header nav ul {
     list-style: none;
     padding: 0;
@@ -33,24 +30,72 @@ header nav ul li {
 }
 
 header nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
 }
 
-/* Section Styling */
 section {
     margin: 20px 0;
     padding: 10px;
-    background: #fff;
+    background: white;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-/* Footer Styling */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px;
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
     background: #007BFF;
-    color: #fff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Top-right Login Button */
+.top-right {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px 15px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    margin: 15% auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.modal-content .close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #333;
 }

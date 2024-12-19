@@ -1,5 +1,5 @@
 // Admin Password (Replace with your desired password)
-const ADMIN_PASSWORD = "admin123";
+const ADMIN_PASSWORD = "6210";
 
 // Toggle Editing
 function toggleEditing(enabled) {
@@ -48,7 +48,7 @@ closeModal.addEventListener("click", () => {
 // Login Button Logic
 document.getElementById("login-button").addEventListener("click", () => {
     const password = document.getElementById("admin-password").value;
-    if (password === Pornography) {
+    if (password === ADMIN_PASSWORD) {
         alert("Welcome, Admin!");
         toggleEditing(true);
         loginModal.style.display = "none";

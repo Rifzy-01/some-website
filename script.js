@@ -48,7 +48,7 @@ closeModal.addEventListener("click", () => {
 // Login Button Logic
 document.getElementById("login-button").addEventListener("click", () => {
     const password = document.getElementById("admin-password").value;
-    if (password === ADMIN_PASSWORD) {
+    if (password === Pornography) {
         alert("Welcome, Admin!");
         toggleEditing(true);
         loginModal.style.display = "none";
